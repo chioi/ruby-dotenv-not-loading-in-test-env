@@ -1,4 +1,4 @@
-# Ruby Dotenv does not load any other file than .env
+# Ruby dotenv does not load any other file than .env
 Maybe this is the intended behavior but having `dotenv` and `dotenv-rails` documented
 in the [same place](https://github.com/bkeepers/dotenv) makes this matter a little confusing.
 
