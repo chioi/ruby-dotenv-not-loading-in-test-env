@@ -5,6 +5,17 @@ in the [same place](https://github.com/bkeepers/dotenv) makes this matter a litt
 Here I'm using the `:dotenv` task as advised in the dotenv docs to run the default RSpec
 task.
 
+```ruby
+require 'rspec'
+require 'rack/test'
+require 'rspec/core/rake_task'
+require 'dotenv/tasks'
+
+task test: :dotenv do
+  RSpec::Core::RakeTask.new(:spec).run_task(verbose: true)
+end
+```
+
 ## Expected behavior
 The `API_URL` variable should be available to the code run by the `:test` task
 (using `bundle exec rake test`).
