@@ -10,7 +10,7 @@ The `API_URL` variable should be available to the code run by the `:test` task
 (using `bundle exec rake test`).
 
 ## Observed behavior
-An error caused because ENV['API_URL'] is null.
+An error caused because `ENV['API_URL']` is null.
 
 ```
 /Users/mariogil/.rvm/rubies/ruby-2.6.3/bin/ruby -I/Users/mariogil/.rvm/gems/ruby-2.6.3/gems/rspec-core-3.8.0/lib:/Users/mariogil/.rvm/gems/ruby-2.6.3/gems/rspec-support-3.8.0/lib /Users/mariogil/.rvm/gems/ruby-2.6.3/gems/rspec-core-3.8.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
@@ -42,7 +42,6 @@ Finished in 0.00026 seconds (files took 0.18951 seconds to load)
 ```
 
 ## How to test
-### If it's the first time you use this project
-Run `bundle install`
+**If it's the first time you use this project:** Run `bundle install`
 
 Run `bundle exec rake test`
